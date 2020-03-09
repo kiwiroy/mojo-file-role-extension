@@ -34,6 +34,26 @@ sub _basename_parse ($self, $extension = 0) {
 
 =encoding utf8
 
+=begin html
+
+<!-- Travis -->
+<a href="https://travis-ci.com/kiwiroy/mojo-file-role-extension">
+  <img src="https://travis-ci.com/kiwiroy/mojo-file-role-extension.svg?branch=master"
+       alt="Travis Build Status" />
+</a>
+<!-- Kritika -->
+<a href="https://kritika.io/users/kiwiroy/repos/3496794177012253/heads/master/">
+  <img src="https://kritika.io/users/kiwiroy/repos/3496794177012253/heads/master/status.svg?type=score%2Bcoverage%2Bdeps"
+       alt="Kritika Analysis Status" />
+</a>
+<!-- Coveralls -->
+<a href="https://coveralls.io/github/kiwiroy/mojo-file-role-extension?branch=master">
+  <img src="https://coveralls.io/repos/github/kiwiroy/mojo-file-role-extension/badge.svg?branch=master"
+       alt="Coverage Status" />
+</a>
+
+=end html
+
 =head1 NAME
 
 Mojo::File::Role::Extension - Access Mojo::File filename extensions
@@ -85,5 +105,14 @@ L</"extension">.
 
 Change the extension of the L<Mojo::File>, retaining the rest of the path and
 return a new L<Mojo::File> object.
+
+=head1 COPYRIGHT & LICENSE
+
+This library is free software. You can redistribute it and/or modify it under
+the same terms as Perl itself.
+
+=head1 AUTHORS
+
+Roy Storey - <kiwiroy@cpan.org>
 
 =cut
