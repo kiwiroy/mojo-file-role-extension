@@ -1,11 +1,18 @@
 package Mojo::File::Role::Extension;
 
 use Mojo::Base -role, -signatures;
+use Mojo::Collection 'c';
+
+our $VERSION = '0.01';
 
 requires 'path';
 
 sub extension ($self) {
   return _basename_parse($self, 1);
+}
+
+sub extension_parts ($self) {
+  return c(split /(?=\.)/ => _basename_parse($self, 1));
 }
 
 sub moniker ($self) {
@@ -19,6 +26,7 @@ sub switch_extension ($self, $suffix = '') {
 sub _basename_parse ($self, $extension = 0) {
   my $base = $self->basename;
   my $idx  = $extension ? 2 : 0;
+  require File::Basename;
   return (File::Basename::fileparse($base, qr/((\.[^\.]+)+)$/))[$idx];
 }
 
@@ -53,6 +61,14 @@ L<Mojo::File> once composed.
   $file->extension;
 
 Readonly access to the file extension of the file or directory.
+
+=head2 extension_parts
+
+  # ['.tar', '.gz']
+  $file->extension_parts;
+
+Readonly access to the file extension(s) of the file or directory. The parts are
+returned as a L<Mojo::Collection> of strings.
 
 =head2 moniker
 

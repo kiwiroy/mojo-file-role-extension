@@ -1,0 +1,19 @@
+# Enable Travis Continuous Integration at https://travis-ci.org
+# Learn more https://docs.travis-ci.com
+language: perl
+os: linux
+jobs:
+  - perl: "5.30"
+  - perl: "5.28"
+  - perl: "5.26"
+  - perl: "5.22"
+  - perl: "5.20"
+    dist: trusty
+install:
+  - "cpanm -n Devel::Cover Test::Pod Test::Pod::Coverage"
+  - "cpanm -n --installdeps --with-develop ."
+after_success:
+  - "cover -test -report coveralls"
+  - "cover -test -report kritika"
+notifications:
+  email: false
