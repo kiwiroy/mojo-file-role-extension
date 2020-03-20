@@ -3,7 +3,7 @@ package Mojo::File::Role::Extension;
 use Mojo::Base -role, -signatures;
 use Mojo::Collection 'c';
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 requires 'path';
 
@@ -50,6 +50,11 @@ sub _basename_parse ($self, $extension = 0) {
 <a href="https://coveralls.io/github/kiwiroy/mojo-file-role-extension?branch=master">
   <img src="https://coveralls.io/repos/github/kiwiroy/mojo-file-role-extension/badge.svg?branch=master"
        alt="Coverage Status" />
+</a>
+<!-- CPANTS -->
+<a href="https://cpants.cpanauthors.org/release/KIWIROY/Mojo-File-Role-Extension-0.01/releases">
+  <img src="https://cpants.cpanauthors.org/release/KIWIROY/Mojo-File-Role-Extension-0.01/.svg"
+       alt="CPANTS" />
 </a>
 
 =end html

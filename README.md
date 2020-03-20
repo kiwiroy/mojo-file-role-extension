@@ -14,6 +14,11 @@
       <img src="https://coveralls.io/repos/github/kiwiroy/mojo-file-role-extension/badge.svg?branch=master"
            alt="Coverage Status" />
     </a>
+    <!-- CPANTS -->
+    <a href="https://cpants.cpanauthors.org/release/KIWIROY/Mojo-File-Role-Extension-0.01/releases">
+      <img src="https://cpants.cpanauthors.org/release/KIWIROY/Mojo-File-Role-Extension-0.01/.svg"
+           alt="CPANTS" />
+    </a>
 </div>
 
 # NAME
