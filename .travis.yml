@@ -2,6 +2,7 @@
 # Learn more https://docs.travis-ci.com
 language: perl
 os: linux
+dist: xenial
 jobs:
   - perl: "5.30"
   - perl: "5.28"
