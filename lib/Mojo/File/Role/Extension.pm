@@ -52,8 +52,8 @@ sub _basename_parse ($self, $extension = 0) {
        alt="Coverage Status" />
 </a>
 <!-- CPANTS -->
-<a href="https://cpants.cpanauthors.org/release/KIWIROY/Mojo-File-Role-Extension-0.01/releases">
-  <img src="https://cpants.cpanauthors.org/release/KIWIROY/Mojo-File-Role-Extension-0.01/.svg"
+<a href="https://cpants.cpanauthors.org/release/KIWIROY/Mojo-File-Role-Extension-0.02">
+  <img src="https://cpants.cpanauthors.org/dist/Mojo-File-Role-Extension.svg"
        alt="CPANTS" />
 </a>
 
